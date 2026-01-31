@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
 
     // Forward the request to the backend
-    const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+    const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
     const backendUrl = `${BACKEND_URL}/api/user/volunteers/apply`;
 
     const response = await fetch(backendUrl, {

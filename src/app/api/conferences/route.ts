@@ -27,7 +27,7 @@ export async function GET(req: NextRequest) {
   }
 
   // Forward the request to the backend
-  const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
   const url = new URL(req.url);
   const backendUrl = `${BACKEND_URL}/api/conferences${url.search}`;
 
@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
   }
 
   // Forward the request to the backend
-  const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
   const backendUrl = `${BACKEND_URL}/api/conferences`;
 
   try {
@@ -119,7 +119,7 @@ export async function PUT(req: NextRequest) {
   }
 
   // Forward the request to the backend
-  const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
   const url = new URL(req.url);
   const conferenceId = url.pathname.split('/').pop(); // Extract ID from URL
   const backendUrl = `${BACKEND_URL}/api/conferences/${conferenceId}`;
@@ -168,7 +168,7 @@ export async function DELETE(req: NextRequest) {
   }
 
   // Forward the request to the backend
-  const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
   const url = new URL(req.url);
   const conferenceId = url.pathname.split('/').pop(); // Extract ID from URL
   const backendUrl = `${BACKEND_URL}/api/conferences/${conferenceId}`;

@@ -27,7 +27,7 @@ export async function GET(req: NextRequest, { params }: { params: { id: string }
   }
 
   // Forward the request to the backend
-  const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
   const backendUrl = `${BACKEND_URL}/api/conferences/${params.id}`;
 
   try {
@@ -71,7 +71,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   }
 
   // Forward the request to the backend
-  const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
   const backendUrl = `${BACKEND_URL}/api/conferences/${params.id}`;
 
   try {
@@ -118,7 +118,7 @@ export async function DELETE(req: NextRequest, { params }: { params: { id: strin
   }
 
   // Forward the request to the backend
-  const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
   const backendUrl = `${BACKEND_URL}/api/conferences/${params.id}`;
 
   try {

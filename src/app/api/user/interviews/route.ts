@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
 
   try {
     // Forward the request to the backend
-    const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+    const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
     const backendUrl = `${BACKEND_URL}/api/user/interviews`;
 
     const response = await fetch(backendUrl, {

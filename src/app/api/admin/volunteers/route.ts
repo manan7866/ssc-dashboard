@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
 
   try {
     // Forward the request to the backend
-    const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+    const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
     const { searchParams } = new URL(request.url);
     const page = searchParams.get('page') || '1';
     const limit = searchParams.get('limit') || '10';
@@ -73,7 +73,7 @@ export async function PUT(request: NextRequest) {
     const reason = body.reason || '';
 
     // Forward the request to the backend
-    const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4001';
+    const BACKEND_URL = process.env.BACKEND_URL || 'https://abdulmanan04-ssc-dashboards.hf.space';
     const backendUrl = isApprove
       ? `${BACKEND_URL}/api/admin/volunteers/${volunteerId}/approve`
       : `${BACKEND_URL}/api/admin/volunteers/${volunteerId}/disapprove`;
