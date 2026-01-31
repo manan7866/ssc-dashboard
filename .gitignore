@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+
+# Production builds
+.next/
+/out/
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# TypeScript/Next.js
+*.tsbuildinfo
+.next/
+.nyc_output/
+
+# Next.js specific
+.next/cache/
+.next/static/chunks/
+.next/static/development/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+public/dist/
+
+# Testing
+coverage/
+.nyc_output/
+junit.xml
+
+# Local configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
