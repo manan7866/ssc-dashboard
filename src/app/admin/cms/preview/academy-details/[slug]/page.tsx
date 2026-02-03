@@ -1,11 +1,11 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import Banner from "../../../components/sections/home3/Banner";
-import Image from "next/image";
-import CircularLoader from "../../../components/CircularLoader";
+// import Banner from "../../../../../../components/admin/cms/sections/home3/Banner";
+// import Image from "next/image";
+import CircularLoader from "../../../../../../components/admin/cms/CircularLoader";
 import axios from "axios";
-import Link from "next/link";
+// import Link from "next/link";
 
 type Slide = {
   subTitle?: string;
