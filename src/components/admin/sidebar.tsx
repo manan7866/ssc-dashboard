@@ -10,13 +10,14 @@ export function Sidebar() {
 
   const menuItems = [
     { name: 'Dashboard', href: '/admin/dashboard', icon: '📊' },
-    { name: 'Users', href: '/admin/users', icon: '👤' },
-    { name: 'Conferences', href: '/admin/conferences', icon: '📅' },
-    { name: 'Donations', href: '/admin/donations', icon: '💰' },
+    { name: 'Memberships', href: '/admin/memberships', icon: '🎫' },
     { name: 'Volunteers', href: '/admin/volunteers', icon: '👥' },
     { name: 'Collaborations', href: '/admin/collaborations', icon: '🤝' },
-    { name: 'Memberships', href: '/admin/memberships', icon: '🎫' },
+    { name: 'Donations', href: '/admin/donations', icon: '💰' },
+    { name: 'Conferences', href: '/admin/conferences', icon: '📅' },
     { name: 'Interviews', href: '/admin/interviews', icon: '🎤' },
+    { name: 'Users', href: '/admin/users', icon: '👤' },
+    {name : 'CMS Managment', href: '/admin/cms/dashboard', icon: '📝' },
   ];
 
   const handleLogout = () => {
